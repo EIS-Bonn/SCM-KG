@@ -1,0 +1,5 @@
+<Dataset id="mswwwdump" type="file">
+  <Param name="file" value="msdata.ttl"/>
+  <Param name="format" value="N-Triple"/>
+  <Param name="graph" value=""/>
+</Dataset>
