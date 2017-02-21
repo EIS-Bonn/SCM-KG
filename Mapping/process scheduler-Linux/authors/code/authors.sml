@@ -18,7 +18,8 @@ Create View Template authorttl As
       foaf:name ?n ;
       rdfs:label ?n ;
       dcterms:Identifier ?i ;
-      rdf:type swrc:author .
+      rdf:type swrc:author ;
+      rdf:type skg:author .
   }
   With
     ?s = uri(concat("https://w3id.org/skg/" ,"authors/" , ?1))
