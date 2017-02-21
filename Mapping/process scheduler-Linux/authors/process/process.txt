@@ -1,7 +1,12 @@
-head conferences.txt > conf-sample.txt
+to see how it works:
+head Authors.txt > authors-sample.txt
 make sml file based on that
 
-created etl file processor then
-g++ confETL.cpp -o confETL
 
-run the scheduler which runs bot etl and gives it output to sparqlify-csv
+for real work:
+./splitByline Authors.txt 100000
+
+create etl file processor then
+g++ authorETL.cpp -o authorETL
+
+run the scheduler which runs both etl and gives it output to sparqlify-csv
