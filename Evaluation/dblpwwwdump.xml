@@ -1,5 +1,0 @@
-<Dataset id="dblpwwwdump" type="file">
-  <Param name="file" value="wwwdblp.ttl"/>
-  <Param name="format" value="N-Triple"/>
-  <Param name="graph" value=""/>
-</Dataset>
