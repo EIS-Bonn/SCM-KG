@@ -189,7 +189,7 @@ string getNameExtension(int index){
 //	}       
    // }
     //result = to_string(index/10000) + to_string(index %1000) + to_string(index%100 )+ to_string( index/100 ) + to_string( index % 10);
-      return std::to_string(index);
+      return to_string(index);
 }
 
 int main(int argc, char* argv[])
