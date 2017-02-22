@@ -120,7 +120,7 @@ string getNameExtension(int index){
 //	}       
    // }
     //result = to_string(index/10000) + to_string(index %1000) + to_string(index%100 )+ to_string( index/100 ) + to_string( index % 10);
-      return std::to_string(index);
+      return to_string(index);
 }
 
 int main(int argc, char* argv[])
@@ -169,8 +169,8 @@ while (std::getline(fp1, line)){
 
 	   counter++; 
 	   subCounter++;	   
-	   //cols = break_line(line, delimiter);
-	   //cols[1]= remove_ending_schar(cols[1]);
+	   cols = break_line(line, delimiter);
+	   cols[1]= remove_ending_schar(cols[1]);
 	   //cols[3]= cols[1];
 	   //cols[3]= replace_char(cols[3], ' ', '_');
 	   resultLine = make_line(",", cols);
@@ -196,4 +196,5 @@ while (std::getline(fp1, line)){
   fp2.close();
   exit(EXIT_SUCCESS);
 }
+
 
