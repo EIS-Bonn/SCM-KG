@@ -1,5 +1,6 @@
 #!/bin/bash
-for f in cites.csv?*9.out;
+for f in PaperReferences*9.out;
  do echo "Processing $f file..";
-  sparqlify-csv  -c cite.sml -f $f > $f.ttl 
+  ./citeETL $f;
+  sparqlify-csv  -c cite.sml -f $f.etl > $f.ttl; 
  done
